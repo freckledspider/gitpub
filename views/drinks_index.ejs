@@ -9,5 +9,12 @@
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
+    <ul>
+    <% drinks.forEach(v=>{ %> 
+        <li>
+            <span class="capitalize"><%=v.name %></span>
+        </li>
+    <% }) %>
+    </ul>
 </body>
 </html>

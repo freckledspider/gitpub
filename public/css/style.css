@@ -2,3 +2,7 @@ body {
     color: blanchedalmond;
     background-color: steelblue;
   }
+
+.capitalize {
+    text-transform: capitalize;
+}
