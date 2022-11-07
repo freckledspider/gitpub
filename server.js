@@ -1,7 +1,10 @@
 require("dotenv").config();
 const express = require("express");
+const drinksController = require('./controllers/index');
 const app = express();
-app.use(express.json())
+app.use(express.static(__dirname + '/public'))
+
+app.use(drinksController);
 
 app.get("/", (req, res) => {
     res.send('Welcome to the Gitpub App!');
