@@ -10,9 +10,11 @@
 <body>
     <h1>Welcome to gitPub</h1>
     
-    <% drinks.forEach(function(drinks, index){ %>
+    <h2>Drinks</h2>
+
+    <% allDrinks.forEach(function(allDrinks, index){ %>
         <li> <a href="/drinks/<%= index %>">
-            <span class="capitalize"><%= drinks.name %></span>
+            <span class="capitalize"><%= allDrinks.name %></span>
         </a></li>
     <% }) %>
 

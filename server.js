@@ -12,16 +12,20 @@ app.get("/", (req, res) => {
     res.send('Welcome to the Gitpub App!');
 });
 
-// app.get("/drinks/:index", (req, res) => {
-//     res.send(req.params.index);
-// });
-
 app.get("/drinks", (req, res) => {
     res.render("drinks_index.ejs");
   });
 
 app.get("/drinks/:id", (req, res) => {
     res.render("drinks_show.ejs");
+  });
+
+  app.get("/food", (req, res) => {
+    res.render("food_index.ejs");
+  });
+
+app.get("/food/:id", (req, res) => {
+    res.render("food_show.ejs");
   });
 
 app.listen(process.env.PORT, () => {

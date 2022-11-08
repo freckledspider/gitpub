@@ -8,15 +8,14 @@
     <title>gitPub</title>
 </head>
 <body>
-    <h1>At foo bar</h1>
-    <%
-    const drinkName = allDrinks.name;
-    const drinkImage = allDrinks.image;
-    const drinkPrice = allDrinks.price;
-    %>
-    <h2><%= drinkName %></h2>
-<img src="<%= drinkImage%>">
-<h3>$<%= drinkPrice %></h3>
-<a href="javascript:history.back()">Back</a>
+    <h1>Welcome to gitPub</h1>
+    
+    <h2>Food</h2>
+    <% allFood.forEach(function(allFood, index){ %>
+        <li> <a href="/food/<%= index %>">
+            <span class="capitalize"><%= allFood.name %></span>
+        </a></li>
+    <% }) %>
+
 </body>
 </html>
