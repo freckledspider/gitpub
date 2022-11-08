@@ -9,12 +9,13 @@
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
-    <ul>
-    <% drinks.forEach(v=>{ %> 
-        <li>
-            <span class="capitalize"><%=v.name %></span>
-        </li>
+    
+    <% drinks.forEach(function(drinks, index){ %>
+        <li> <a href="/drinks/<%= index %>">
+            <span class="capitalize"><%= drinks.name %></span>
+        </a></li>
     <% }) %>
-    </ul>
+
+
 </body>
 </html>
