@@ -3,6 +3,33 @@ body {
     background-color: steelblue;
   }
 
+h1, h2, h3 {
+  font-family: helvetica;
+}
+
 .capitalize {
     text-transform: capitalize;
+}
+
+a:link, a:visited, a.active {
+  background-color: blanchedalmond;
+  color: steelblue;
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  font-family: arial;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: blanchedalmond;
+  background-color: rgb(56, 106, 147);
+  padding: 10px;
+  text-decoration: none;
+  display: inline-block;
+  width: 300px;
+  font-family: arial;
 }
